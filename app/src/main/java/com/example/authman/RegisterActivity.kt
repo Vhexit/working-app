@@ -54,7 +54,13 @@ class RegisterActivity : AppCompatActivity() {
 
         //perform input validation if blank
         if (userEmail.isBlank() || userPass.isBlank() || confirmPass.isBlank()) {
-            Toast.makeText(this, 'One of your input fields is empty', Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "One of your inputs is empty", Toast.LENGTH_SHORT).show()
+
+        }
+
+        //check if password is matching
+        if (userPass != confirmPass) {
+            Toast.makeText(this, "Sorry Password is not matching", Toast.LENGTH_SHORT).show()
 
         }
 
