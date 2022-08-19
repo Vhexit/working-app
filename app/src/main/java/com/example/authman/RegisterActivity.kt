@@ -62,11 +62,11 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this, "Sorry Password is not matching", Toast.LENGTH_SHORT).show()
         }
         //create user with firebase auth
-
         auth.createUserWithEmailAndPassword(userEmail, userPass).addOnCompleteListener(this) {
             if (it.isSuccessful ) {
                 Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_LONG).show()
                 finish()
+                //Navigate to another page
             }
             else {
                 Toast.makeText(this, "Failed to Sign Up", Toast.LENGTH_SHORT).show()
