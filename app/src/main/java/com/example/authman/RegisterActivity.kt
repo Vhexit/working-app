@@ -57,12 +57,22 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this, "One of your inputs is empty", Toast.LENGTH_SHORT).show()
 
         }
-
         //check if password is matching
         if (userPass != confirmPass) {
             Toast.makeText(this, "Sorry Password is not matching", Toast.LENGTH_SHORT).show()
-
         }
+        //create user with firebase auth
+
+        auth.createUserWithEmailAndPassword(userEmail, userPass).addOnCompleteListener(this) {
+            if (it.isSuccessful ) {
+                Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_LONG).show()
+                finish()
+            }
+            else {
+                Toast.makeText(this, "Failed to Sign Up", Toast.LENGTH_SHORT).show()
+            }
+        }
+
 
 
 
