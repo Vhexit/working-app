@@ -38,9 +38,27 @@ class RegisterActivity : AppCompatActivity() {
 
         Buttonreg.setOnClickListener {
 
-            //sign u
+            //user sign up method
+            signUpUser()
 
         }
+
+
+    }
+
+    private fun signUpUser() {
+
+        val userEmail = emailinp.text.toString()
+        val userPass = passinp.text.toString()
+        val confirmPass = confpassinp.text.toString()
+
+        //perform input validation if blank
+        if (userEmail.isBlank() || userPass.isBlank() || confirmPass.isBlank()) {
+            Toast.makeText(this, 'One of your input fields is empty', Toast.LENGTH_SHORT).show()
+
+        }
+
+
 
 
     }
