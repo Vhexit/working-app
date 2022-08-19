@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "582786049128",
+    "firebase_url": "https://stokes-c612d.firebaseio.com",
+    "project_id": "stokes-c612d",
+    "storage_bucket": "stokes-c612d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582786049128:android:50b82dff5a4088cd",
+        "android_client_info": {
+          "package_name": "mycryptoworld.com.stokes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582786049128-99lvqco89fj3eaa5i8sbrq30qlo78dn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mycryptoworld.com.stokes",
+            "certificate_hash": "7780d3535d2ecd623356ed9e18ed96a38082b337"
+          }
+        },
+        {
+          "client_id": "582786049128-qpmnu7jrsnb6bavvi9tqc8c4anko0vfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mycryptoworld.com.stokes",
+            "certificate_hash": "ffed39c9380b5bf9d46c0745b0e3c80256e20179"
+          }
+        },
+        {
+          "client_id": "582786049128-u3v38d8ctin5836de077di84bldctde4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOkqLMb9y37cSOuzKfydB6-OaSoRiFSiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582786049128-u3v38d8ctin5836de077di84bldctde4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
