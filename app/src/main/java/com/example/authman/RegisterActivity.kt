@@ -1,6 +1,5 @@
 package com.example.authman
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -25,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
         //find our ids
-        Buttonreg=findViewById(R.id.btnLogin)
+        Buttonreg=findViewById(R.id.login_btn)
         emailinp = findViewById(R.id.edtEmail)
         passinp = findViewById(R.id.edtPassword)
         confpassinp =findViewById(R.id.edtConfPassword)
