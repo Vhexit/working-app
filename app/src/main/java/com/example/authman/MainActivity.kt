@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnLogin:Button
     lateinit var emailedt:EditText
     lateinit var passwordedt:EditText
-    lateinit var btnLogin:Button
+
     //initialize firebase
 
     private lateinit var auth: FirebaseAuth
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loginUser() {
-        Toast.makeText(this, "Tring to Login", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "Trying to Login", Toast.LENGTH_SHORT).show()
         //Convert inputs to string
         val userEmail = emailedt.text.toString()
         val userPassword = passwordedt.text.toString()
