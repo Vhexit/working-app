@@ -1,7 +1,9 @@
 package com.example.authman
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -54,7 +56,7 @@ class RegisterActivity : AppCompatActivity() {
         //perform input validation if blank
         if (userEmail.isBlank() || userPass.isBlank() || confirmPass.isBlank()) {
             Toast.makeText(this, "One of your inputs is empty", Toast.LENGTH_SHORT).show()
-
+//chai , Juice , uji
         }
         //check if password is matching
         if (userPass != confirmPass) {
@@ -66,9 +68,14 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_LONG).show()
                 finish()
                 //Navigate to another page
+                var intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+
             }
             else {
                 Toast.makeText(this, "Failed to Sign Up", Toast.LENGTH_SHORT).show()
+                Log.d("TAG", "Error--->", it.exception)
             }
         }
 

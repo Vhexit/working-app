@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Authman/app/src/main/res/layout/activity_landingpage.xml" value="0.11614583333333334" />
         <entry key="..\:/Authman/app/src/main/res/layout/activity_main.xml" value="0.2732919254658385" />
         <entry key="..\:/Authman/app/src/main/res/layout/activity_register.xml" value="0.209375" />
+        <entry key="..\:/KotlinAndroidClasses/Authman/app/src/main/res/layout/activity_landingpage.xml" value="0.33" />
+        <entry key="..\:/KotlinAndroidClasses/Authman/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/KotlinAndroidClasses/Authman/app/src/main/res/layout/activity_view_cars.xml" value="0.1" />
+        <entry key="..\:/KotlinAndroidClasses/Authman/app/src/main/res/layout/car_layout.xml" value="0.33" />
       </map>
     </option>
   </component>

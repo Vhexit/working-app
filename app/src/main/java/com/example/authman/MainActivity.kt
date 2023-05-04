@@ -3,6 +3,7 @@ package com.example.authman
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -12,12 +13,14 @@ import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var btnLogin:Button
-    lateinit var emailedt:EditText
-    lateinit var passwordedt:EditText
+    private lateinit var btnLogin:Button
+    private lateinit var createAcc:Button
+    private lateinit var emailedt:EditText
+    private lateinit var passwordedt:EditText
+
+    private lateinit var inputphone:EditText
 
     //initialize firebase
-
     private lateinit var auth: FirebaseAuth
 
 
@@ -28,9 +31,19 @@ class MainActivity : AppCompatActivity() {
         emailedt = findViewById(R.id.edtEmail)
         passwordedt = findViewById(R.id.edtPassword)
         btnLogin = findViewById(R.id.login_btn)
+        createAcc = findViewById(R.id.acc_btn)
 
         //initialize firebase
         auth = Firebase.auth
+
+
+        createAcc.setOnClickListener {
+
+            var intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         btnLogin.setOnClickListener {
 
@@ -50,14 +63,20 @@ class MainActivity : AppCompatActivity() {
         val userEmail = emailedt.text.toString()
         val userPassword = passwordedt.text.toString()
 
+        //Toast.makeText(this, "email is $userEmail and password is $userPassword", Toast.LENGTH_LONG).show()
+
         auth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener {
             if (it.isSuccessful) {
-                //means if task is successful
-                var intent = Intent(this, RegisterActivity::class.java)
+                //means if task is successful navigate to landing page
+                var intent = Intent(this, Landingpage::class.java)
                 startActivity(intent)
+
+
             }
             else {
                 Toast.makeText(this, "Failed to Sign in", Toast.LENGTH_LONG).show()
+
+                Log.d("TAG", "Error--->", it.exception)
             }
         }
 
