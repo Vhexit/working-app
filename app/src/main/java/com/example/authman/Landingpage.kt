@@ -63,7 +63,7 @@ class Landingpage : AppCompatActivity() {
                 ref.setValue(car).addOnCompleteListener {
                     if (it.isSuccessful) {
 
-                        Toast.makeText(this, "Car Data Uploaded Successfully", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "User Data Uploaded Successfully", Toast.LENGTH_SHORT).show()
 
                     } else {
 

@@ -4,74 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/medibg2"
     tools:context=".Landingpage">
 
     <EditText
         android:id="@+id/edtcarmake"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
-        android:hint="Enter Car Make"
+
+
+        android:hint="Enter Drug"
         android:inputType="textPersonName"
+        android:padding="15dp"
         android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/holo_green_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edtcarmodel"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
-        android:hint="Enter Car Model"
+        android:hint="Enter Dosage taken"
         android:inputType="textPersonName"
+        android:padding="15dp"
         android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/holo_green_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtcarmake" />
 
     <EditText
         android:id="@+id/edtcarprice"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
-        android:hint="Enter Car Price"
+        android:hint="Enter Your review"
         android:inputType="textPersonName"
+        android:padding="15dp"
         android:text=""
-        app:layout_constraintStart_toStartOf="@+id/edtcarmodel"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtcarmodel" />
 
     <Button
-        android:id="@+id/btnUpdateRec"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="24dp"
-        android:text="Upload Photo"
-        app:layout_constraintStart_toStartOf="@+id/edtcarprice"
-        app:layout_constraintTop_toBottomOf="@+id/edtcarprice" />
-
-    <Button
         android:id="@+id/btnsubmit"
-        android:layout_width="wrap_content"
+        style="@style/ButtonGreen"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="15dp"
+
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/btn_bg"
         android:text="Submit Data"
-        app:layout_constraintEnd_toEndOf="@+id/btnUpdateRec"
-        app:layout_constraintTop_toBottomOf="@+id/btnUpdateRec" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btnviewcars"
-        android:layout_width="wrap_content"
+        style="@style/ButtonGreen"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="39dp"
-        android:text="View Cars"
-        app:layout_constraintStart_toStartOf="@+id/btnsubmit"
-        app:layout_constraintTop_toBottomOf="@+id/btnsubmit" />
+        android:layout_marginBottom="283dp"
+        android:background="@drawable/btn_bg"
+        android:text="View Reviews"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnsubmit"
+        app:layout_constraintStart_toStartOf="@+id/btnsubmit" />
 </androidx.constraintlayout.widget.ConstraintLayout>

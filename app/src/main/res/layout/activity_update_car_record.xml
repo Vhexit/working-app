@@ -4,56 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/medibg2"
     tools:context=".UpdateCar_Record">
 
 
     <EditText
         android:id="@+id/edtcarmake"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
-        android:hint="Enter Car Make"
+        android:hint="Enter Drug"
         android:inputType="textPersonName"
-        android:text=""
+
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@+id/edtcarmodel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edtcarmodel"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/input_bg"
         android:ems="10"
-        android:hint="Enter Car Model"
+        android:hint="Enter the dosage taken"
         android:inputType="textPersonName"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/edtcarprice"
-        app:layout_constraintEnd_toEndOf="@+id/edtcarprice" />
-
-    <EditText
-        android:id="@+id/edtcarprice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="331dp"
-        android:ems="10"
-        android:hint="Enter Car Price"
-        android:inputType="textPersonName"
-        android:text=""
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/edtcarprice"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Enter the reviews of the drug taken"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtcarmodel" />
+
     <Button
         android:id="@+id/btnUpdateRec"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="42dp"
-        android:text="Update Car Record"
-        app:layout_constraintStart_toStartOf="@+id/edtcarprice"
-        app:layout_constraintTop_toBottomOf="@+id/edtcarprice" />
+        android:layout_marginTop="203dp"
+        android:layout_marginBottom="191dp"
+        android:text="UPLOAD YOUR DETAILS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtcarprice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

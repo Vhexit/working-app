@@ -3,40 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/medibg"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Welcome to MediReviews"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        />
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
         android:gravity="center"
+        android:textColor="@color/white"
         android:hint="Enter Email"
-        android:inputType="textEmailAddress" />
+
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000" />
 
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/white"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/security"
+        android:drawablePadding="10dp"
         android:gravity="center"
         android:hint="Enter Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColorHint="#000" />
 
     <Button
         android:id="@+id/login_btn"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="Login"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/btn_bg"
 
-        />
+        android:text="Login" />
 
 
     <Button
@@ -44,16 +67,17 @@
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:text="Create Account"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/btn_bg"
 
-        />
+        android:text="Create Account" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="300dp"
         android:gravity="center"
-        android:text="Dont Have an Account Register Here"
-        android:textColor="@color/black" />
+        android:text="Don't Have an Account Register Here"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
 </RelativeLayout>
